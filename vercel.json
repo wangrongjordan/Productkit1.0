@@ -8,16 +8,5 @@
     "ENABLE_EXPERIMENTAL_COREPACK": "0",
     "NPM_CONFIG_FUND": "false",
     "NPM_CONFIG_AUDIT": "false"
-  },
-  "headers": [
-    {
-      "source": "/.*",
-      "headers": [
-        {
-          "key": "X-Package-Manager",
-          "value": "npm"
-        }
-      ]
-    }
-  ]
+  }
 }
