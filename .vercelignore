@@ -2,7 +2,7 @@
 node_modules
 .pnpm-store
 pnpm-lock.yaml
-package-lock.json
+# Keep package-lock.json for npm detection
 yarn.lock
 
 # Build output (will be built on Vercel)
