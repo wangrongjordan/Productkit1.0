@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+    /* Apple Blue Color Scheme */
+    --apple-blue: #007AFF;
+    --apple-blue-dark: #0056CC;
+    --apple-blue-light: #4A9DFF;
+    --apple-blue-bg: #E8F4FD;
+    --apple-blue-subtle: #F0F9FF;
+    --apple-blue-secondary: #5856D6;
+    
+    /* Apple Text Colors */
+    --apple-text-primary: #1D1D1F;
+    --apple-text-secondary: #6E6E73;
+    --apple-text-tertiary: #86868B;
+    
+    /* Apple Background Colors */
+    --apple-gray: #F2F2F7;
+    --apple-gray-light: #F8F8F9;
+    --apple-white: #FFFFFF;
+    
+    /* Apple Blue Variants for Different UI Elements */
+    --apple-blue-100: #E6F3FF;
+    --apple-blue-200: #CCE7FF;
+    --apple-blue-300: #99D5FF;
+    --apple-blue-400: #66C2FF;
+    --apple-blue-500: #007AFF;
+    --apple-blue-600: #0056CC;
+    --apple-blue-700: #004999;
+    --apple-blue-800: #003D80;
+    --apple-blue-900: #003066;
+    
+    /* Semantic Colors using Apple Blue */
+    --apple-success: #30D158;
+    --apple-warning: #FF9500;
+    --apple-error: #FF3B30;
+    --apple-info: #007AFF;
+    
+    /* Sidebar variables */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%
+  }
+
+  .dark {
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%
+  }
+}
+
+@layer components {
+  /* Apple Style Button */
+  .apple-button {
+    @apply inline-flex items-center px-6 py-3 bg-blue-500 text-white rounded-lg font-medium hover:bg-blue-600 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all duration-200 shadow-sm;
+  }
+  
+  .apple-button-secondary {
+    @apply inline-flex items-center px-6 py-3 bg-blue-50 text-blue-700 border border-blue-200 rounded-lg font-medium hover:bg-blue-100 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all duration-200;
+  }
+
+  /* Apple Style Card */
+  .apple-card {
+    @apply bg-white rounded-xl shadow-sm border border-gray-200 p-6 hover:shadow-md transition-shadow;
+  }
+  
+  /* Apple Style Input */
+  .apple-input {
+    @apply w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors;
+  }
+
+  /* Apple Blue Gradient */
+  .apple-blue-gradient {
+    background: linear-gradient(135deg, #007AFF 0%, #5856D6 100%);
+  }
+}
+
+img {
+  object-position: top;
+}
+
+.fixed {
+  position: fixed;
+}
