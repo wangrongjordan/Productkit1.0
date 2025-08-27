@@ -9,7 +9,6 @@
     "NPM_CONFIG_FUND": "false",
     "NPM_CONFIG_AUDIT": "false"
   },
-  "functions": {},
   "headers": [
     {
       "source": "/.*",
