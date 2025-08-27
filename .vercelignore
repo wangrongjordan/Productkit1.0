@@ -1,6 +1,9 @@
 # Dependencies
 node_modules
 .pnpm-store
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
 
 # Build output (will be built on Vercel)
 dist
