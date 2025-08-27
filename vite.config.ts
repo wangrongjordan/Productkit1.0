@@ -41,8 +41,14 @@ export default defineConfig({
         }
       }
     },
-    // 启用 gzip 压缩
+    // 启用 Terser 压缩
     minify: 'terser',
+    terserOptions: {
+      compress: {
+        drop_console: isProd,
+        drop_debugger: isProd
+      }
+    },
     // 生成 source map（仅在开发模式）
     sourcemap: !isProd,
     // 设置 chunk 大小警告阈值
